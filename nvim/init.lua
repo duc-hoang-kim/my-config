@@ -1,0 +1,5 @@
+require("duc-hoang.core.options")
+require("duc-hoang.core.custom_commands")
+require("duc-hoang.lazy")
+require("duc-hoang.core.colorscheme")
+require("duc-hoang.core.keymaps")
