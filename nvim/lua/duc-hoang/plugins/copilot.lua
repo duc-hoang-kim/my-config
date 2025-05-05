@@ -21,17 +21,25 @@ return {
 			},
 			suggestion = {
 				enabled = true,
-				auto_trigger = false,
+				auto_trigger = true,
 				hide_during_completion = true,
 				debounce = 75,
 				keymap = {
-					accept = "<M-l>",
-					accept_word = false,
-					accept_line = false,
+					accept = "<S-Tab>",
+					-- accept_word = true,
+					-- accept_line = true,
 					next = "<M-]>",
 					prev = "<M-[>",
 					dismiss = "<C-]>",
 				},
+			},
+			filetypes = {
+				javascript = true,
+				typescript = true,
+				lua = true,
+				ruby = true,
+
+				["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
 			},
 		})
 	end,
