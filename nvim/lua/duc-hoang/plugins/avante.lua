@@ -8,12 +8,25 @@ return {
 		provider = "ollama",
 		ollama = {
 			endpoint = "http://127.0.0.1:11434",
-			model = "qwen2.5-coder:14b",
+			model = "bun:latest",
+			max_tokens = 32768,
+		},
+		cursor_planning_provider = "ollama",
+		behaviour = {
+			auto_set_highlight_group = true,
+			auto_suggestions = false, -- Experimental stage
+			auto_set_keymaps = true,
+			auto_apply_diff_after_generation = false,
+			support_paste_from_clipboard = false,
+			minimize_diff = true, -- Whether to remove unchanged lines when applying a code block
+			enable_token_counting = true, -- Whether to enable token counting. Default to true.
+			enable_cursor_planning_mode = true,
 		},
 		vendors = {
 			["ollama-pro"] = {
 				__inherited_from = "ollama",
-				model = "qwen2.5-coder:32b",
+				model = "bap:latest",
+				max_tokens = 32768,
 			},
 		},
 		web_search_engine = {
@@ -27,6 +40,49 @@ return {
 			incoming = "DiffAdd",
 			current = "DiffText",
 		},
+		mappings = {
+			--- @class AvanteConflictMappings
+			diff = {
+				ours = "co",
+				theirs = "ct",
+				all_theirs = "ca",
+				both = "cb",
+				cursor = "cc",
+				next = "]x",
+				prev = "[x",
+			},
+			suggestion = {
+				accept = "<M-l>",
+				next = "<M-]>",
+				prev = "<M-[>",
+				dismiss = "<C-]>",
+			},
+			jump = {
+				next = "]]",
+				prev = "[[",
+			},
+			submit = {
+				normal = "<CR>",
+				insert = "<C-s>",
+			},
+			cancel = {
+				normal = { "<C-c>", "<Esc>", "q" },
+				insert = { "<C-c>" },
+			},
+			sidebar = {
+				apply_all = "A",
+				apply_cursor = "a",
+				retry_user_request = "r",
+				edit_user_request = "e",
+				switch_windows = "<Tab>",
+				reverse_switch_windows = "<S-Tab>",
+				remove_file = "d",
+				add_file = "@",
+				close = { "<Esc>", "q" },
+				close_from_input = nil, -- e.g., { normal = "<Esc>", insert = "<C-d>" }
+			},
+		},
+		hints = { enabled = true },
 	},
 	-- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
 	build = "make",

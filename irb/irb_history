@@ -1,0 +1,95 @@
+[].present?
+[].present?
+[].present?
+nil.present?
+[].nil?
+nil.nil?
+nil.present?
+nil.present?
+nil.try :abc
+nil.try :nil?
+nil.try :nil?
+a = 1
+a.to_s
+a.try :to_s
+a.try :to_sfas
+a.try :to_sfa
+nil.nil?
+nil.try :nil?
+module B\
+  def test_print\
+    print\
+  end\
+end
+class A\
+  include B\
+  private \
+  def print\
+    puts "hello"\
+  end\
+end
+A.new.test_print
+A.new.test_print
+A.new.test_print
+module B\
+  def test_print\
+    try(:print)\
+  end\
+end
+A.new.test_print
+A.new.test_print
+A.new.test_print
+A.send :nosss
+A.send :novdsvsdv
+RosteredShift
+RosteredShift.last
+RosteredShift.last
+RosteredShift.last
+RosteredShift.last
+RosteredShift.last
+RosteredShift.last
+RosteredShift.last
+"2025-05-17T20:46:00.000Z"
+"2025-05-17T20:46:00.000Z".to_time
+Time.now
+Time.now.iso8601
+Time.utc.iso8601
+Time.now.utc.iso8601
+Time.now.class
+Time.now.utc
+Time.now.utd.class
+Time.now.utc.class
+Time.zone.now
+Time.zone.now.class
+Time.zone.now.start_of_week
+Time.zone.now.beginning_of_the_week
+Time.zone.now.b
+Time.zone.now.beginning_of_the_week(:sunday)
+Time.zone.now.beginning_of_week(:sunday)
+Time.zone.now.end_of_week(:sunday)
+Time.new("2024-06-28T09:00:00Z")
+Time.at("2024-06-28T09:00:00Z")
+Time.new("2024-06-28T09:00:00Z")
+Time.new("2024-28-06T09:00:00Z")
+Time.new("2024-28-06T09:00:00Z")
+start_time = Time.parse("2024-06-30 23:59:59.999999999 +0000")
+1.class
+Auth
+Auth.new
+Auth.new(organisation_id: 123)
+Auth.new({ organisation_id: 123})
+nil.blank?
+a = [[1,2], [3,4]]
+a.each |a,b| do
+a.each do |x, y|\
+  puts [x, y]\
+end
+a.each do |x, y|\
+  puts x + y\
+end
+a.each do |x, y|\
+  puts x + y\
+end
+Api::V3::ShiftWarningsController.new.authorize!
+    binding.pry
+Api::V3::ShiftWarningsController.new.authorize!

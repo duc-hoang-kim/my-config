@@ -1,0 +1,110 @@
+BLUE=0xFF1E6E77
+ORANGE=0xFFCC7B6E
+PINK=0xFFD7448A
+RED=0xFFCE3A5B
+GREEN=0xFF638989
+
+# main bar & defaults
+sketchybar --bar height=30        \
+                 margin=12        \
+                 y_offset=5       \
+                 padding_left=0   \
+                 padding_right=0  \
+                 color=0x00000000
+
+sketchybar --default updates=when_shown                             \
+                     icon.color=0xFFFFFFFF                          \
+                     label.font="Hack Nerd Font:Bold:14.0" \
+                     icon.font="Hack Nerd Font:Bold:14.0" \
+                     background.color=0x00000000                    \
+                     y_offset=0
+
+# ~~ left items ~~
+# update defaults
+sketchybar --default                                                \
+                     background.color=0xEB1e1e2e                    \
+                     blur_radius=2                                  \
+                     background.corner_radius=15                    \
+                     background.height=30                           \
+                     icon.padding_left=12                           \
+                     icon.padding_right=4                           \
+                     label.padding_left=4                           \
+                     label.padding_right=12                         \
+                     # label.font=sketchybar-app-font                 \
+                     background.padding_left=18                     \
+                     background.border_width=1
+
+
+# ~~ center items ~~
+
+# app title
+# sketchybar --add event front_app_switched
+sketchybar --add item title center                                  \
+           --set      title label.padding_left=12                   \
+                            label="Title"                           \
+                            background.padding_left=0               \
+                            icon.padding_left=12                     \
+                            icon.padding_right=0                    \
+                            script='./plugins/title.sh'             \
+                            background.border_color=0xFFD3CDC5      \
+                            # update_freq=1                           \
+                            label.max_chars=54                      # \
+                            # scroll_texts=on                         \
+                            # label.scroll_duration=200
+
+sketchybar --subscribe title front_app_switched
+
+
+# ~~ right items ~~
+
+# time
+sketchybar --add item time right                                    \
+           --set      time icon=󱑎                                   \
+                           icon.color=$BLUE                       \
+                           background.border_color=$BLUE          \
+                           label="$(date '+%I:%M %p')"              \
+                           script='./plugins/time.sh'               \
+                           update_freq=1
+
+# date
+sketchybar --add item date right                                    \
+           --set      date icon=󱨰                                   \
+                           icon.color=$GREEN                        \
+                           background.border_color=$GREEN            \
+                           label="$(date '+%a %b %d')"              \
+                           script='./plugins/date.sh'               \
+                           update_freq=10
+
+# battery
+sketchybar --add item battery right                                 \
+           --set      battery icon=                                \
+                              icon.color=$RED                   \
+                              background.border_color=$RED       \
+                              label="--%"                           \
+                              script='./plugins/battery.sh'         \
+                              update_freq=20
+
+
+sketchybar --add item title_proxy right                             \
+           --set      title_proxy y_offset=100                      \
+                                  label="Title"
+
+
+sketchybar --add event aerospace_workspace_change
+
+for sid in $(aerospace list-workspaces --monitor all --empty no); do
+    sketchybar --add item space.$sid left \
+        --subscribe space.$sid aerospace_workspace_change \
+        --set space.$sid \
+        background.color=0x44ffffff \
+        background.corner_radius=5 \
+        background.height=20 \
+        background.drawing=off \
+        label="$sid" \
+        click_script="aerospace workspace $sid" \
+        script="$CONFIG_DIR/plugins/aerospace.sh $sid"
+done
+
+# finish config
+sketchybar --hotload on
+sketchybar --update
