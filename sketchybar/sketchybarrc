@@ -31,14 +31,10 @@ sketchybar --default                                                \
                      label.padding_left=4                           \
                      label.padding_right=12                         \
                      # label.font=sketchybar-app-font                 \
-                     background.padding_left=18                     \
-                     background.border_width=1
-
 
 # ~~ center items ~~
 
 # app title
-# sketchybar --add event front_app_switched
 sketchybar --add item title center                                  \
            --set      title label.padding_left=12                   \
                             label="Title"                           \
@@ -48,12 +44,10 @@ sketchybar --add item title center                                  \
                             script='./plugins/title.sh'             \
                             background.border_color=0xFFD3CDC5      \
                             # update_freq=1                           \
-                            label.max_chars=54                      # \
                             # scroll_texts=on                         \
                             # label.scroll_duration=200
 
 sketchybar --subscribe title front_app_switched
-
 
 # ~~ right items ~~
 
@@ -85,10 +79,12 @@ sketchybar --add item battery right                                 \
                               update_freq=20
 
 
-sketchybar --add item title_proxy right                             \
-           --set      title_proxy y_offset=100                      \
-                                  label="Title"
-
+sketchybar --add alias "Control Center,WiFi" right \
+           --set       "Control Center,WiFi" alias.color="0xFFFFFFFF"
+sketchybar --add alias "Stats,Network_speed" right \
+           --set       "Stats,Network_speed" alias.color="0xFFFFFFFF"
+sketchybar --add alias "EVKey,Item-0" right \
+           --set       "EVKey,Item-0" alias.color="0xFFFFFFFF"
 
 sketchybar --add event aerospace_workspace_change
 
@@ -96,9 +92,6 @@ for sid in $(aerospace list-workspaces --monitor all --empty no); do
     sketchybar --add item space.$sid left \
         --subscribe space.$sid aerospace_workspace_change \
         --set space.$sid \
-        background.color=0x44ffffff \
-        background.corner_radius=5 \
-        background.height=20 \
         background.drawing=off \
         label="$sid" \
         click_script="aerospace workspace $sid" \

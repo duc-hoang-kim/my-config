@@ -328,7 +328,7 @@ function __icon_map() {
     icon_result=":keynote:"
     ;;
   "kitty")
-    icon_result=""
+    icon_result=":kitty:"
     ;;
   "Kodi")
     icon_result=":kodi:"
