@@ -15,7 +15,7 @@ after-startup-command = ['exec-and-forget sketchybar']
 exec-on-workspace-change = [
   '/bin/bash',
   '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+  ' ~/.config/sketchybar/plugins/aerospace.sh $AEROSPACE_FOCUSED_WORKSPACE $AEROSPACE_PREV_WORKSPACE'
 ]
 
 # Start AeroSpace at login
@@ -43,12 +43,14 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-
-on-focus-changed=[
-  "move-mouse window-lazy-center",
-  "exec-and-forget sketchybar --trigger aerospace_focus_change"
+on-focused-monitor-changed = [
+  'move-mouse monitor-lazy-center',
 ]
+
+on-focus-changed = [
+  'exec-and-forget ~/.config/sketchybar/plugins/aerospace-workspace-windows.sh'
+]
+
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
 # Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
@@ -241,3 +243,6 @@ run = "move-node-to-workspace C"
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = "move-node-to-workspace C"
+
+# [[on-window-detected] 
+# run = 'exec-and-forget sketchybar --trigger aerospace_new_window'
