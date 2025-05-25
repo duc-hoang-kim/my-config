@@ -20,6 +20,8 @@ contains_element() {
 FOCUSED=$(aerospace list-windows --focused --format "%{window-id}")
 
 new_windows=()
+sketchybar --remove group.$WORKSPACE
+
 while IFS= read -r line; do
   window_id="${line%% | *}"
   app_name="${line#* | }"
@@ -32,12 +34,11 @@ while IFS= read -r line; do
   if [ -z "$(sketchybar --query "$window")" ]; then
     sketchybar --add item $window left \
       --set $window icon="$icon_result" \
+      icon.font="sketchybar-app-font:Normal:14.0" \
       icon.padding_right=0 \
       label.padding_left=0 \
       --move $window before space.$WORKSPACE
 
-    sketchybar --remove group.$WORKSPACE
-    sketchybar --add bracket group.$WORKSPACE "/space\.$WORKSPACE.*/"
   fi
 
   echo "$window_id $FOCUSED"
@@ -56,3 +57,5 @@ while IFS= read -r item; do
     sketchybar --remove $item_surrounding_quotes_removed
   fi
 done < <(sketchybar --query bar | jq -e ".items[] | select(startswith(\"space.$WORKSPACE.\"))")
+
+sketchybar --add bracket group.$WORKSPACE "/space\.$WORKSPACE.*/"

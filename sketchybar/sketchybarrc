@@ -15,7 +15,7 @@ sketchybar --bar height=30        \
 sketchybar --default updates=when_shown                             \
                      icon.color=0xFFFFFFFF                          \
                      label.font="Hack Nerd Font:Bold:14.0" \
-                    icon.font="sketchybar-app-font:Normal:14.0" \
+                     icon.font="Hack Nerd Font:Bold:14.0" \
                      background.color=0x00000000                    \
                      y_offset=0
 
@@ -80,10 +80,6 @@ sketchybar --add item battery right                                 \
 
 sketchybar --add alias "Control Center,WiFi" right \
            --set       "Control Center,WiFi" alias.color="0xFFFFFFFF"
-sketchybar --add alias "Stats,Network_speed" right \
-           --set       "Stats,Network_speed" alias.color="0xFFFFFFFF"
-sketchybar --add alias "EVKey,Item-0" right \
-           --set       "EVKey,Item-0" alias.color="0xFFFFFFFF"
 
 # finish config
 sketchybar --hotload on
