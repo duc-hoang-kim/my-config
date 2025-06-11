@@ -1,0 +1,10 @@
+# Ignore tmux plugins directory
+plugins/
+
+# Ignore any plugin-specific files
+*.log
+*.cache
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db 
