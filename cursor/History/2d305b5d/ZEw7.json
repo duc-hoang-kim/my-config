@@ -1,0 +1,28 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "ruby.lsp.enabled": true,
+  "ruby.rubocop.onSave": false,
+  "ruby.format": "rubocop",
+  "[ruby]": {
+    "editor.defaultFormatter": "rebornix.Ruby",
+  },
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false
+  },
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "j"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ]
+}

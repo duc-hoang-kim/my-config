@@ -1,0 +1,10 @@
+[
+  {
+    "key": "cmd+shift+a",
+    "command": "Rails:Navigation"
+  },
+  {
+    "key": "cmd+shift+t",
+    "command": "workbench.action.quickOpen"
+  }
+] 
