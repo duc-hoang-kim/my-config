@@ -8,6 +8,12 @@
         "folders": [
             {
                 "folderUri": "file:///Users/duchoang/Projects/rostering-api-service"
+            },
+            {
+                "folderUri": "file:///Users/duchoang/Projects/grpc_proto"
+            },
+            {
+                "folderUri": "file:///Users/duchoang/Projects/employment-hero"
             }
         ],
         "emptyWindows": []
@@ -17,7 +23,9 @@
         "workspaces": {
             "file:///Applications": "__default__profile__",
             "file:///Users/duchoang/Projects/rostering-api-service": "__default__profile__",
-            "file:///Users/duchoang/.config": "__default__profile__"
+            "file:///Users/duchoang/.config": "__default__profile__",
+            "file:///Users/duchoang/Projects/grpc_proto": "__default__profile__",
+            "file:///Users/duchoang/Projects/employment-hero": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -71,6 +79,26 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/duchoang/Projects/employment-hero",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Projects/employment-hero"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/Users/duchoang/Projects/grpc_proto",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Projects/grpc_proto"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -450,8 +478,7 @@
                                         "items": [
                                             {
                                                 "id": "workbench.action.showMultipleEditorTabs",
-                                                "label": "Multiple Tabs",
-                                                "checked": true
+                                                "label": "Multiple Tabs"
                                             },
                                             {
                                                 "id": "workbench.action.showEditorTab",
@@ -751,54 +778,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1611,7 +1629,7 @@
             "titleBarBorder": "rgba(255, 255, 255, 0.05)",
             "activityBarBackground": "#141414",
             "sideBarBackground": "#141414",
-            "sideBarBorder": "rgba(255, 255, 255, 0.05)",
+            "sideBarBorder": "#3c3c3c",
             "statusBarBackground": "#141414",
             "statusBarBorder": "rgba(255, 255, 255, 0.05)",
             "statusBarNoFolderBackground": "#141414"
@@ -1621,23 +1639,57 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 0,
-            "sideBarWidth": 221,
+            "sideBarWidth": 382,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/duchoang/Projects/rostering-api-service",
-            "backupPath": "/Users/duchoang/Library/Application Support/Cursor/Backups/d84347c8ffcf4a3fbb19f63fba65639b",
+            "folder": "file:///Users/duchoang/Projects/employment-hero",
+            "backupPath": "/Users/duchoang/Library/Application Support/Cursor/Backups/adaa1cc6fe9d4c41dbd594db7d2865ce",
             "uiState": {
                 "mode": 1,
-                "x": 10,
-                "y": 48,
+                "x": 1799,
+                "y": 1141,
                 "width": 1780,
                 "height": 1110
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///Users/duchoang/Projects/rostering-api-service",
+                "backupPath": "/Users/duchoang/Library/Application Support/Cursor/Backups/d84347c8ffcf4a3fbb19f63fba65639b",
+                "uiState": {
+                    "mode": 1,
+                    "x": 1799,
+                    "y": 1141,
+                    "width": 1780,
+                    "height": 1110
+                }
+            },
+            {
+                "folder": "file:///Users/duchoang/Projects/grpc_proto",
+                "backupPath": "/Users/duchoang/Library/Application Support/Cursor/Backups/b08eab6f18a599a7b066b85c1e80b7de",
+                "uiState": {
+                    "mode": 1,
+                    "x": 1799,
+                    "y": 1141,
+                    "width": 1800,
+                    "height": 1131
+                }
+            },
+            {
+                "folder": "file:///Users/duchoang/Projects/employment-hero",
+                "backupPath": "/Users/duchoang/Library/Application Support/Cursor/Backups/adaa1cc6fe9d4c41dbd594db7d2865ce",
+                "uiState": {
+                    "mode": 1,
+                    "x": 1799,
+                    "y": 1141,
+                    "width": 1780,
+                    "height": 1110
+                }
+            }
+        ]
     }
 }

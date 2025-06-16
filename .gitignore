@@ -1,3 +1,7 @@
 github-copilot/
 cursor/workspaceStorage/*
+cursor/History/*
+hero2/token.json
+cursor/globalStorage/vscodevim.vim/.registers
+cursor/globalStorage/vscodevim.vim/.search_history
 

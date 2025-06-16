@@ -37,6 +37,26 @@
         {
             "before": ["<leader>", "f", "s"],
             "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<leader>", "s", "v"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.navigateLeft"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.navigateDown"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.navigateUp"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.navigateRight"]
         }
     ]
 }
