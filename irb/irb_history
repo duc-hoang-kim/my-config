@@ -93,3 +93,1312 @@ end
 Api::V3::ShiftWarningsController.new.authorize!
     binding.pry
 Api::V3::ShiftWarningsController.new.authorize!
+RosteredShift::ACTIONS::AUTO_DECLINE_UNCONFIRMED
+RosteredShift::ACTIONS
+ShiftHistory::AUTO_DECLINE_UNCONFIRMED
+I18n.t("error.bulk_create.some_open_shifts_are_invalid")
+["a", "b", 'c'].index_with(0)
+a = {}\
+a[:abc]
+a = {}\
+a[:abc]
+a = {}\
+a[:abc]
+a
+a = {}\
+define? a[:abc]
+a = {}\
+defined? a[:abc]
+a = {}\
+defined?(a[:abc])
+a = {}\
+defined?(a)
+a = {}\
+defined?(a[:abc])
+a = {}\
+defined?(b)
+[1,2,3] & [2]
+[1,2,3] & [2,4]
+[].present?
+\
+3*1.minute
+Date.lnew
+Date.today
+Date.today.nbow
+Date.today.now
+0 || 1
+false || 1
+Time.current
+Time.now
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+# Format it as a string without the timezone\
+current_time.strftime("%Y-%m-%d %H:%M:%S.%6N")
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+# Format it as a string without the timezone\
+current_time.strftime("%Y-%m-%d %H:%M:%S.%6N").to_time
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+# Format it as a string without the timezone\
+current_time.strftime("%Y-%m-%d %H:%M:%S.%6N").to_time.utc
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+# Format it as a string without the timezone\
+current_time.strftime("%Y-%m-%d %H:%M:%S.%6N")
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+# Format it as a string without the timezone\
+current_time.strftime("%Y-%m-%d %H:%M:%S")
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+# Format it as a string without the timezone\
+current_time.strftime("%Y-%m-%d %H:%M:%S")
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+# Format it as a string without the timezone\
+current_time.strftime("%Y-%m-%d %H:%M:%S")
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+.strftime("%Y-%m-%d %H:%M:%S")
+current_time = Time.current \
+# => Wed, 22 Oct 2025 17:15:37.821312 +07:00\
+\
+Time.now.strftime("%Y-%m-%d %H:%M:%S")
+Time.now.strftime("%Y-%m-%d %H:%M:%S").to_time
+Time.now.strftime("%Y-%m-%d %H:%M:%S").zone
+Time.now.strftime("%Y-%m-%d %H:%M:%S")
+Time.now.strftime("%Y-%m-%d %H:%M:%S").in_time_zone("Eastern Time (US & Canada)")
+Time.in_time_zone("Eastern Time (US & Canada)").parse("2025-10-22 17:19:15")
+Time.zone("Eastern Time (US & Canada)").parse("2025-10-22 17:19:15")
+Time.zone.parse("2025-10-22 17:19:15")
+1..9.to_a
+(1..9).to_a
+(1..9).to_a.each_slice(3)
+(1..9).to_a.each_slice(3).with_index { |a, b| puts a,b }
+(1..9).to_a.each_slice(3).with_index { |a, b| puts a.join(','),b }
+I18n.t('csv_processor.errors.job_not_validated', status: 'mapping')
+JSON.parse(File.open('rag_kb_code.json'))
+JSON.parse(File.open('rag_kb_code.json').data)
+JSON.parse(File.open('rag_kb_code.json'))
+1.1.to_i
+Date.new
+Date.current
+a = _
+b = a + 12.hours
+b
+b-a
+ summary_accumulator = Hash.new do |hash, key|\
+        hash[key] = { scheduled_hours: 0.0, scheduled_cost: 0.0 }\
+      end
+summary_accumulator["123"]
+summary_accumulator["123"].object_id
+summary_accumulator["1234"].object_id
+a = Hash.new { {} }
+a[1]
+a[1].object_id
+a[2].object_id
+a[1]['a'] = 'b'
+a
+a[1]
+a[1]['a'] = 'b'
+a[1]['a'] = 'b'
+a[1]
+summary_accumulator["123"]
+summary_accumulator["123"][:scheduled_hours]
+summary_accumulator["123"][:scheduled_hours] = 5
+summary_accumulator
+summary_accumulator["123"][:scheduled_hoursssss] = 1
+summary_accumulator
+Struct.new(:work_site_id, :start_time, :end_time)
+a = Struct.new(:work_site_id, :start_time, :end_time)
+1.year
+1.years.to_i
+1.years.to_i / 365
+1.years.to_i / 365/ 24
+1.years.to_i / 365 /  24  / 60
+Time.current - 1.year
+Time.current - 2.year
+Time.current - 4.year
+Time.current - 3.year
+a = OpenStruct.new(a: 1)
+a.asf
+a.b
+a.a
+RosteredShift.ast
+RosteredShift.last
+User.last
+Member.last
+Member.last.to_struct
+Time.current
+end_of_day
+Time.current.end_of_day
+Time.parse('2025-02-29')
+Time.parse('2024-02-29')
+Time.parse('2024-02-29') - 1.year
+Time.parse('2024-02-28') - 1.year
+Time.parse('2024-02-30') - 1.year
+Time.parse('2024-02-29') - 1.year
+Time.parse('2024-03-01') - 1.year
+Time.parse('2024-02-28') - 1.year
+Time.parse('2025-03-01') - 1.year
+Time.parse('2025-02-28') - 1.year
+SalesSummaries::Get::Base
+SalesSummaries::Get::VIEW_DAY
+SalesSummaries::Get::STRATEGIES
+Time.current.utc
+Time.current
+Time.current.beginning_of_week
+[1,5,10,15].bsearch_index 2
+[1,5,10,15].bsearch_index { |n| N <= 2 }
+[1,5,10,15].bsearch_index { |n| n <= 2 }
+[1,5,10,15].bsearch { |n| n <= 2 }
+[1,5,10,15].bsearch { |n| n > 2 }
+[1,5,10,15].reverse.bsearch { |n| n > 2 }
+[1,5,10,15].reverse.bsearch { |n| n < 2 }
+[1,5,10,15].reverse.bsearch { |n| n < 6 }
+[1,5,10,15].reverse.bsearch { |n| n <= 9 }
+[1,5,10,15].reverse.bsearch { |n| n <= 5 }
+"duc".uppercase
+"duc".upper
+"duc".lower
+"duc".downcase
+"duc".upcase
+a = 1.3323; a.round(2)
+a = 1.3323.to_f; a.round(2)
+a = 1.3523.to_f; a.round(2)
+a = 1.3353.to_f; a.round(2)
+a = 1.3350.to_f; a.round(2)
+a = 1.3351.to_f; a.round(2)
+a = 1.3341.to_f; a.round(2)
+nil.round(2)
+SalesSummary.last
+create(:sales_summary,\
+    work_site: work_site,\
+    organisation: organisation,\
+    hr_position: hr_position,\
+    start_time: (start_date - 1.year).beginning_of_day,\
+    end_time: (start_date - 1.year).beginning_of_day + 15.minutes,\
+    total_sales_amount: 80.00\
+  )
+SalesSummary.last
+SalesSummaries
+SalesSummaries.last
+SalesSummary.last
+SalesSummary.last
+SalesSummary.last
+SalesSummary.pluck :id
+1/0 rescue 100
+1/0
+exit
+0.present?
+Date.current
+Date.current.iso8601
+Date.current.beginning_of_week.iso8601
+Date.current.beginning_of_week.to_time.iso8601
+Date.current.beginning_of_day.to_time.iso8601
+Date.current.beginning_of_day.iso8601
+Date.current.beginning_of_day.iso8601
+Date.current.beginning_of_week.to_time.iso8601
+Date.current.beginning_of_week.to_time(:utc).iso8601
+Date.current.beginning_of_week.to_time(:utc).iso8601
+a = [{a: 1, b: 2}, {a: 1, b:3}]
+a = [{a: 1, b: 2}, {a: 1, b:3}].index_by(&:a)
+a = [{a: 1, b: 2}, {a: 1, b:3}].index_by { |a| a[:a] } 
+SalesSummary.intevals
+SalesSummary.intervals
+SalesSummary.intervals.keys
+SalesSummaries::Get::STRATEGIES.values
+SalesSummaries::Get::Day
+SalesSummaries::Get::STRATEGIES.keys
+a = {a: 1}
+a.merge ({a: nil} )
+3.donwto(1).map &:to_s
+3.donwto(1).map { |i| i }
+3..1
+(3..1).map &:to_s
+[1,2,3].resverse
+[1,2,3].reverse
+1.months / 1.week
+1.month / 1.week
+Time.days_in_month
+Time.days_in_month(2)
+Time.days_in_month(3)
+Time.days_in_month(2)
+Time.days_in_month(2, 2024)
+Time.days_in_month(2, 2025)
+ Time.days_in_month("2025-02-10".to_time)
+ Time.days_in_month("2025-02-10".to_time)
+start_time = "2025-02-10".to_time.beginning_of_day
+Time.days_in_month(start_time.month)
+Time.days_in_month(start_time.month, start_time.year)
+Time.days_in_month(start_time.month, start_time.year)
+[1,2,3].unshift 0
+nope 
+Date.current.beginning_of_day.iso8601
+Date.current.beginning_of_day.iso8601(1)
+Date.current.beginning_of_day.iso8601(9)
+Date.current.end_of_day
+nil.empty?
+Time.utc("2025-10-12")
+Time.pa("2025-10-12")
+Time.parse("2025-10-12").utc
+Time.parse("2025-10-12").utc
+Time.zone.parse("2025-10-12")
+Time.zone.parse("2025-10-12")
+Time.current.to_i
+Time.zone.at(_)
+a = 0 
+(0...28000).each { |n| a += n }
+a
+(0...28000).each { |n| a += n }
+(0...57000).each { |n| a += n }
+Time.utc.parse
+Time.utc.parse('2025-12-12')
+
+Time.parse('2025-12-12')
+WorkSite.last
+WorkSite.last.organisation
+o = _
+o.members.first.id
+o.members.first.user.id
+o.members.first.user
+o.members.first
+o.members.where.not(role: nil)
+o.members.first
+o.members.first.update role: 'owner'
+SecureRandom.b
+SecureRandom.base58
+SecureRandom.base58
+SecureRandom.base58
+SecureRandom.base58(5)
+SecureRandom.base58(20)
+SecureRandom.
+SecureRandom.base64(30)
+SecureRandom.base64(30).size
+PosIntegration
+PosConnection.last
+reload!
+Integrations::PosFetcher.new(connection.last)
+Integrations::PosFetcher.new(connection.last, 'locations')
+Integrations::PosFetcher.new(Connection.last, 'locations')
+Integrations::PosFetcher.new(PosConnection.last, 'locations')
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations')
+s.call
+reload!
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations')
+s.call
+reload!
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations')
+s.call
+reload!
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations')
+s.call
+reload!
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations')
+s.call
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations')
+s.call
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations');s.call
+s = Integrations::PosFetcher.new(PosConnection.last, 'locations');s.call
+%i[a b]
+%I[a b]
+Worksite
+WorkSite
+WorkSite.last.valid?
+WorkSite.last.pos_connection
+POS_CREDENTIALS
+POS_CREDENTIALS
+Rails.application.config.pos_credentials
+Rails.application.config.pos_credentials["square"]
+Rails.application.config.pos_credentials["square"]
+Rails.application.config.pos_credentials["square"]
+Rails.application.config.pos_credentials["square"]
+Rails.application.config.pos_credentials["square"]
+bundle exec rspec --color spec/models/pos_connection_spec.rb
+Rails.application.config.pos_credentials["square"]
+Time.now.iso8601
+Time.now.iso8bundle exec rspec --color spec/lib/integrations/square_client_spec.rb601
+Integrations::GenerateOauthUrlService.new(provider: 'kounta')
+Integrations::GenerateOauthUrlService.new(provider: 'kounta').call
+Integrations::CreateOauthConnectionService.new(organisation: Organisation.last, provider: 'kounta', code: 'sandbox-sq0cgb-dfVKvRo3x0_fb-oJX1Is1w')
+service = _ 
+service.call
+reload!
+service.call
+Integrations::CreateOauthConnectionService.new(organisation: Organisation.last, provider: 'kounta', code: 'sandbox-sq0cgb-dfVKvRo3x0_fb-oJX1Is1w').call
+reload!
+Integrations::CreateOauthConnectionService.new(organisation: Organisation.last, provider: 'kounta', code: 'sandbox-sq0cgb-dfVKvRo3x0_fb-oJX1Is1w').call
+Integrations::CreateOauthConnectionService.new(organisation: Organisation.last, provider: 'kounta', code: 'sandbox-sq0cgb-cyHgR3m5MqCZ_v18fe7qwg').call
+WorkSite.last
+RosteredShift.last
+bundle exec rspec --color spec/models/pos_connection_spec.rb
+I18n.t('integrations.oauth.connected_successfully')
+bundle exec rspec --color spec/controllers/api/v3/integrations_controller_spec.rb
+PosConnection.find("sandbox-sq0cgb-D0u7SiOVjyT13LSBEeB12Q")
+PosConnection.find("338323a8-3ab4-4f8f-8b66-d3363901b8ed")
+PosConnection.last
+Integrations::Square::FetchLocations.new(pos_connection)
+pos_connection = PosConnection.last
+Integrations::Square::FetchLocations.new(pos_connection:)
+Integrations::Square::FetchLocations.new(pos_connection:).call
+Integrations::Square::FetchLocations.new(pos_connection:).call
+pos_connection = PosConnection.last
+Integrations::Square::FetchLocations.new(pos_connection:).call
+pos_connection
+pos_connection.update provider: 'kounta'
+pos_connection.update provider: 'square'
+pos_connection
+Integrations::Square::FetchLocations.new(pos_connection:).call
+begin\
+  puts "Iteration"\
+  raise\
+rescue\
+  retry\
+end
+Integrations::Square::FetchLocations.new(pos_connection:).call
+pos_connection = PosConnection.last
+Integrations::Square::FetchLocations.new(pos_connection:).call
+PosConnection.last
+PosConnection.last.orgnisation_id
+PosConnection.last.organisation_id
+PosConnection.last.organisation_id
+PosConnection.last.organisation.users.first
+PosConnection.last.organisation.members.first
+0.01.seconds
+Time.parse('2026-02-04T07:30:59')
+Time.parse('2026-02-04T07:30:59') - 0.001.seconds
+Time.parse('2026-02-04T07:30:59') - 0.01.seconds
+Time.parse('2026-02-04T07:30:59') - 1
+Time.parse('2026-02-04T07:30:59') - 0.1
+Time.parse("2026-02-04T07:30:22Z")- 0.001
+Time.parse("2026-02-04T07:30:22Z")- 0.001
+(Time.parse("2026-02-04T07:30:22Z")- 0.001).strftime('%Y-%m-%dT%H:%M:%S.%3LZ')
+def end_of_15_min_interval(time = Time.now.utc)\
+  # 1. Calculate the start of the current 15-min block\
+  # (e.g., if it's 07:12, this gives 07:00; if 07:22, this gives 07:15)\
+  interval_seconds = 15 * 60\
+  start_of_interval = Time.at((time.to_f / interval_seconds).floor * interval_seconds).utc\
+  \
+  # 2. Add 15 minutes to get the start of the NEXT interval\
+  next_interval = start_of_interval + interval_seconds\
+  \
+  # 3. Subtract 1 millisecond (0.001) to get the .999 timestamp\
+  end_time = next_interval - 0.001\
+  \
+  end_time.strftime('%Y-%m-%dT%H:%M:%S.%3LZ')\
+end\
+\
+# Example usage:\
+# If current time is 07:06:12\
+puts end_of_15_min_interval\
+# => "2026-02-26T07:14:59.999Z"
+Time.parse('2026-02-04T07:30:59').change(usec: 999_000)
+Time.parse('2026-02-04T07:30:00').change(usec: 999_000)
+Time.parse('2026-02-04T07:30:00').change(sec: 59,usec: 999_000)
+1.usec
+Time.parse('2026-02-04T07:30:00').change(,usec: 999_000)
+Time.parse('2026-02-04T07:30:00').change(usec: 999_000)
+Time.current.utc.end_of_hour
+require "Square"\
+\
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+require "Square"\
+\
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+require "Square"\
+\
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+require "Square"
+require "Square"\
+\
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+require "square"
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+Square
+Square::Client
+Square
+require 'square'
+Square::Client
+Square
+Square::Connect
+client = Square::Client.new(\
+    token: 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg',\
+    environment: Square::Environment::SANDBOX\
+);
+require 'Square'
+require 'square'
+require 'net/http'\
+require 'uri'\
+require 'json'\
+\
+uri = URI.parse("https://connect.squareupsandbox.com/v2/orders/search")\
+request = Net::HTTP::Post.new(uri)\
+request['Authorization'] = 'Bearer EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+request['Content-Type'] = 'application/json'\
+request.body = { location_ids: ["L1YWX5JT4Y49G"], limit: 1 }.to_json\
+\
+response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) { |http| http.request(request) }\
+data = JSON.parse(response.body)\
+\
+# Square returns the total count in the search results\
+puts "Total Orders found via API: #{data['orders'].length}"
+require 'net/http'\
+require 'uri'\
+require 'json'\
+require 'securerandom'\
+\
+# Configuration\
+ACCESS_TOKEN = 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+LOCATION_ID = 'L1YWX5JT4Y49G'\
+\
+def test_single_create\
+  uri = URI.parse("https://connect.squareupsandbox.com/v2/orders")\
+  http = Net::HTTP.new(uri.host, uri.port)\
+  http.use_ssl = true\
+\
+  request = Net::HTTP::Post.new(uri.path)\
+  request['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+  request['Square-Version'] = '2026-01-22'\
+  request['Content-Type'] = 'application/json'\
+\
+  # We use an ad-hoc line item instead of a Catalog ID to ensure it works\
+  request.body = {\
+    order: {\
+      location_id: LOCATION_ID,\
+      line_items: [{\
+        name: "Debug Item",\
+        quantity: "1",\
+        base_price_money: { amount: 100, currency: "USD" }\
+      }]\
+    },\
+    idempotency_key: SecureRandom.uuid\
+  }.to_json\
+\
+  response = http.request(request)\
+  \
+  if response.code == "200"\
+    puts "✅ Success! Order Created: #{JSON.parse(response.body)['order']['id']}"\
+  else\
+    puts "❌ Failed! Code: #{response.code}"\
+    puts "Response Body: #{response.body}"\
+  end\
+end\
+\
+test_single_create
+require 'net/http'\
+require 'uri'\
+require 'json'\
+require 'securerandom'\
+require 'date'\
+\
+# --- Config ---\
+ACCESS_TOKEN = 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+LOCATION_ID = 'L1YWX5JT4Y49G'\
+TOTAL_ORDERS = 2000\
+THREAD_COUNT = 5\
+\
+# --- Setup ---\
+start_date = Date.today << 24\
+queue = Queue.new\
+(0...TOTAL_ORDERS).each { |i| queue << (start_date + (i * 0.365)).to_s }\
+\
+results = { success: 0, errors: 0 }\
+mutex = Mutex.new\
+\
+puts "🚀 Generating 2,000 Sales (Orders + Payments)..."\
+\
+threads = Array.new(THREAD_COUNT) do |t_id|\
+  Thread.new do\
+    Net::HTTP.start("connect.squareupsandbox.com", 443, use_ssl: true) do |http|\
+      until queue.empty?\
+        sim_date = queue.pop(true) rescue nil\
+        break unless sim_date\
+\
+        begin\
+          # 1. Create Order\
+          order_req = Net::HTTP::Post.new("/v2/orders")\
+          order_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+          order_req['Content-Type'] = 'application/json'\
+          order_req.body = {\
+            order: {\
+              location_id: LOCATION_ID,\
+              reference_id: "REF-#{sim_date}",\
+              line_items: [{ name: "Poseidon Buffet Sale", quantity: "1", base_price_money: { amount: 50000, currency: "USD" } }]\
+            },\
+            idempotency_key: SecureRandom.uuid\
+          }.to_json\
+\
+          order_res = http.request(order_req)\
+          \
+          if order_res.code == "200"\
+            order_id = JSON.parse(order_res.body).dig("order", "id")\
+\
+            # 2. Pay for Order (Crucial for Dashboard visibility)\
+            pay_req = Net::HTTP::Post.new("/v2/payments")\
+            pay_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+            pay_req['Content-Type'] = 'application/json'\
+            pay_req.body = {\
+              source_id: "cnon:card-nonce-ok",\
+              idempotency_key: SecureRandom.uuid,\
+              amount_money: { amount: 50000, currency: "USD" },\
+              order_id: order_id\
+            }.to_json\
+            \
+            pay_res = http.request(pay_req)\
+\
+            mutex.synchronize do\
+              results[:success] += 1\
+              puts "Progress: #{results[:success]}/#{TOTAL_ORDERS}" if results[:success] % 50 == 0\
+            end\
+          else\
+            mutex.synchronize { results[:errors] += 1 }\
+          end\
+        rescue\
+          mutex.synchronize { results[:errors] += 1 }\
+        end\
+        sleep 0.02 # Tiny throttle\
+      end\
+    end\
+  end\
+end\
+\
+threads.each(&:join)\
+puts "✅ Done! Created #{results[:success]} historical sales."
+require 'net/http'\
+require 'uri'\
+require 'json'\
+require 'thread'\
+\
+# 1. Configuration\
+URI_OBJ = URI.parse("https://connect.squareupsandbox.com/v2/orders/search")\
+ACCESS_TOKEN = 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+TOTAL_CALLS = 1000\
+THREAD_COUNT = 5\
+\
+payload = {\
+  return_entries: true,\
+  location_ids: ["L1YWX5JT4Y49G"],\
+  query: { filter: {} },\
+  limit: 1\
+}.to_json\
+\
+# 2. Setup Queue and Results tracking\
+queue = Queue.new\
+(1..TOTAL_CALLS).each { |i| queue << i }\
+results = { success: 0, rate_limited: 0, error: 0 }\
+mutex = Mutex.new # For thread-safe counter updates\
+\
+# 3. Worker Threads\
+threads = Array.new(THREAD_COUNT) do |t_id|\
+  Thread.new do\
+    # Reuse the same HTTP connection for efficiency (Keep-Alive)\
+    Net::HTTP.start(URI_OBJ.host, URI_OBJ.port, use_ssl: true) do |http|\
+      until queue.empty?\
+        call_num = queue.pop(true) rescue nil\
+        break unless call_num\
+\
+        request = Net::HTTP::Post.new(URI_OBJ.request_uri)\
+        request['Square-Version'] = '2026-01-22'\
+        request['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+        request['Content-Type'] = 'application/json'\
+        request.body = payload\
+\
+        begin\
+          response = http.request(request)\
+          \
+          mutex.synchronize do\
+            case response.code.to_i\
+            when 200 then results[:success] += 1\
+            when 429 then results[:rate_limited] += 1\
+            else results[:error] += 1\
+            end\
+            \
+            # Print progress every 50 calls to keep the terminal clean\
+            if (results[:success] + results[:rate_limited] + results[:error]) % 50 == 0\
+              puts "Progress: #{results[:success] + results[:rate_limited] + results[:error]}/#{TOTAL_CALLS}..."\
+            end\
+          end\
+          \
+          # Small delay to respect Sandbox limits\
+          sleep 0.1 \
+        rescue => e\
+          mutex.synchronize { results[:error] += 1 }\
+          puts "Thread #{t_id} encountered an error: #{e.message}"\
+        end\
+      end\
+    end\
+  end\
+end\
+\
+threads.each(&:join)\
+\
+# 4. Final Summary\
+puts "\n" + "="*30\
+puts "FINAL REPORT"\
+puts "="*30\
+puts "Successful Calls: #{results[:success]}"\
+puts "Rate Limited (429): #{results[:success] == 0 ? 'Check Token' : results[:rate_limited]}"\
+puts "Other Errors:      #{results[:error]}"\
+puts "="*30
+// cache-control: max-age=0, private, must-revalidate\
+// content-encoding: gzip\
+// content-type: application/json; charset=utf-8\
+// date: Thu, 26 Feb 2026 17:47:04 GMT\
+// square-version: 2026-01-22\
+\
+{\
+  "orders": [\
+    {\
+      "id": "nGEEeth8zxdmYIUrpEHiKznYLDPZY",\
+      "location_id": "L1YWX5JT4Y49G",\
+      "line_items": [\
+        {\
+          "uid": "0ef94464-a593-4af0-a902-df6adb180c65",\
+          "catalog_object_id": "H5TASMQD3HBRQSWDDFGH7D34",\
+          "catalog_version": 1770187578464,\
+          "quantity": "5",\
+          "name": "poseidon buffet",\
+          "variation_name": "Regular",\
+          "base_price_money": {\
+            "amount": 100000,\
+            "currency": "USD"\
+          },\
+          "gross_sales_money": {\
+            "amount": 500000,\
+            "currency": "USD"\
+          },\
+          "total_tax_money": {\
+            "amount": 0,\
+            "currency": "USD"\
+          },\
+          "total_discount_money": {\
+            "amount": 0,\
+            "currency": "USD"\
+          },\
+          "total_money": {\
+            "amount": 500000,\
+            "currency": "USD"\
+          },\
+          "variation_total_price_money": {\
+            "amount": 500000,\
+            "currency": "USD"\
+          },\
+          "item_type": "ITEM",\
+          "total_service_charge_money": {\
+            "amount": 0,\
+            "currency": "USD"\
+          },\
+          "total_card_surcharge_money": {\
+            "amount": 0,\
+            "currency": "USD"\
+          }\
+        }\
+      ],\
+      "created_at": "2026-02-04T08:52:20.797Z",\
+      "updated_at": "2026-02-04T08:52:55.000Z",\
+      "state": "COMPLETED",\
+      "version": 7,\
+      "total_tax_money": {\
+        "amount": 0,\
+        "currency": "USD"\
+      },\
+      "total_discount_money": {\
+        "amount": 0,\
+        "currency": "USD"\
+      },\
+      "total_tip_money": {\
+        "amount": 0,\
+        "currency": "USD"\
+      },\
+      "total_money": {\
+        "amount": 500000,\
+        "currency": "USD"\
+      },\
+      "closed_at": "2026-02-04T08:52:52.360Z",\
+      "tenders": [\
+        {\
+          "id": "LBeMaqVksRMkO2PB0esRNWV2dpQZY",\
+          "location_id": "L1YWX5JT4Y49G",\
+          "transaction_id": "nGEEeth8zxdmYIUrpEHiKznYLDPZY",\
+          "created_at": "2026-02-04T08:52:52Z",\
+          "note": "",\
+          "amount_money": {\
+            "amount": 500000,\
+            "currency": "USD"\
+          },\
+          "type": "OTHER",\
+          "tip_money": {\
+            "amount": 0,\
+            "currency": "USD"\
+          },\
+          "payment_id": "LBeMaqVksRMkO2PB0esRNWV2dpQZY",\
+          "other_details": {\
+            "source": "Invoice payment"\
+          }\
+        }\
+      ],\
+      "total_service_charge_money": {\
+        "amount": 0,\
+        "currency": "USD"\
+      },\
+      "net_amounts": {\
+        "total_money": {\
+          "amount": 500000,\
+          "currency": "USD"\
+        },\
+        "tax_money": {\
+          "amount": 0,\
+          "currency": "USD"\
+        },\
+        "discount_money": {\
+          "amount": 0,\
+          "currency": "USD"\
+        },\
+        "tip_money": {\
+          "amount": 0,\
+          "currency": "USD"\
+        },\
+        "service_charge_money": {\
+          "amount": 0,\
+          "currency": "USD"\
+        },\
+        "card_surcharge_money": {\
+          "amount": 0,\
+          "currency": "USD"\
+        }\
+      },\
+      "source": {\
+        "name": "Invoices"\
+      },\
+      "customer_id": "ZD7BSGJ1747QP7BSZWXRY8EHKC",\
+      "net_amount_due_money": {\
+        "amount": 0,\
+        "currency": "USD"\
+      },\
+      "total_card_surcharge_money": {\
+        "amount": 0,\
+        "currency": "USD"\
+      }\
+    }\
+  ],\
+  "cursor": "QY6UCBVM0uOlIObAzg2rA8BWsW5yTLXhFjEbz9UFKma2iiIB5JxRhSQDPV7WMhdh6ZjDlNQMC8N7L8Cl4onlxCBMcuZAUPfCYjmwSHTVGNVlzgjrDDk2SdL2UOzabXjT08yzWCWltub8P"\
+}
+require 'net/http'\
+require 'uri'\
+require 'json'\
+require 'thread'\
+require 'securerandom'\
+require 'date'\
+\
+# --- Configuration ---\
+ACCESS_TOKEN = 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+LOCATION_ID = 'L1YWX5JT4Y49G'\
+CATALOG_ID = 'H5TASMQD3HBRQSWDDFGH7D34'\
+TOTAL_ORDERS = 20\
+THREAD_COUNT = 5\
+\
+# Create a list of dates spread over the last 24 months\
+start_date = Date.today << 24\
+dates = (1..TOTAL_ORDERS).map { |i| (start_date + (i * 0.36)).to_s } \
+\
+queue = Queue.new\
+dates.each { |date| queue << date }\
+\
+results = { success: 0, error: 0 }\
+mutex = Mutex.new\
+\
+puts "Starting generation of 2,000 orders across 24 months..."\
+\
+# --- Threaded Execution ---\
+threads = Array.new(THREAD_COUNT) do |t_id|\
+  Thread.new do\
+    Net::HTTP.start("connect.squareupsandbox.com", 443, use_ssl: true) do |http|\
+      until queue.empty?\
+        target_date = queue.pop(true) rescue nil\
+        break unless target_date\
+\
+        # 1. Create Order (Poseidon Buffet)\
+        order_payload = {\
+          order: {\
+            location_id: LOCATION_ID,\
+            reference_id: "date_#{target_date}", # Storing the "fake" date here\
+            line_items: [{\
+              catalog_object_id: CATALOG_ID,\
+              quantity: "5",\
+              base_price_money: { amount: 100000, currency: "USD" }\
+            }]\
+          },\
+          idempotency_key: SecureRandom.uuid\
+        }.to_json\
+\
+        req = Net::HTTP::Post.new("/v2/orders")\
+        req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+        req['Square-Version'] = '2026-01-22'\
+        req['Content-Type'] = 'application/json'\
+        req.body = order_payload\
+\
+        begin\
+          res = http.request(req)\
+          order_id = JSON.parse(res.body).dig("order", "id")\
+\
+          if res.code == "200" && order_id\
+            # 2. Pay for the Order\
+            pay_req = Net::HTTP::Post.new("/v2/payments")\
+            pay_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+            pay_req['Content-Type'] = 'application/json'\
+            pay_req.body = {\
+              source_id: "cnon:card-nonce-ok",\
+              idempotency_key: SecureRandom.uuid,\
+              amount_money: { amount: 500000, currency: "USD" },\
+              order_id: order_id\
+            }.to_json\
+            \
+            pay_res = http.request(pay_req)\
+            \
+            mutex.synchronize do\
+              results[:success] += 1\
+              if results[:success] % 50 == 0\
+                puts "Progress: #{results[:success]}/#{TOTAL_ORDERS} orders created..."\
+              end\
+            end\
+          end\
+        rescue => e\
+          mutex.synchronize { results[:error] += 1 }\
+        end\
+        \
+        # Throttling to avoid Sandbox 429s\
+        sleep 0.05 \
+      end\
+    end\
+  end\
+end\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+threads.each(&:join)\
+\
+puts "Done! Success: #{results[:success]}, Errors: #{results[:error]}"
+require 'net/http'\
+require 'uri'\
+require 'json'\
+require 'thread'\
+require 'securerandom'\
+require 'date'\
+\
+# --- Configuration ---\
+ACCESS_TOKEN = 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+LOCATION_ID = 'L1YWX5JT4Y49G'\
+CATALOG_ID = 'H5TASMQD3HBRQSWDDFGH7D34'\
+TOTAL_ORDERS = 2000\
+THREAD_COUNT = 5\
+\
+# 1. Generate 2,000 "Fake" timestamps spread over 24 months\
+# This gives us a string like "2024-06-15" to store in the order notes\
+start_date = Date.today << 24\
+all_dates = (0...TOTAL_ORDERS).map { |i| (start_date + (i * 0.365)).to_s }\
+\
+queue = Queue.new\
+all_dates.each { |d| queue << d }\
+\
+results = { success: 0, error: 0, rate_limit: 0 }\
+mutex = Mutex.new\
+\
+puts "🚀 Starting 2,000 Order & Payment cycles across 5 threads..."\
+\
+# 2. Worker Threads\
+threads = Array.new(THREAD_COUNT) do |t_id|\
+  Thread.new do\
+    Net::HTTP.start("connect.squareupsandbox.com", 443, use_ssl: true) do |http|\
+      until queue.empty?\
+        simulated_date = queue.pop(true) rescue nil\
+        break unless simulated_date\
+\
+        begin\
+          # --- STEP A: CREATE ORDER ---\
+          order_uri = URI("https://connect.squareupsandbox.com/v2/orders")\
+          order_req = Net::HTTP::Post.new(order_uri)\
+          order_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+          order_req['Square-Version'] = '2026-01-22'\
+          order_req['Content-Type'] = 'application/json'\
+          \
+          order_req.body = {\
+            order: {\
+              location_id: LOCATION_ID,\
+              reference_id: "REF-#{simulated_date}", # For your reporting logic\
+              line_items: [{\
+                catalog_object_id: CATALOG_ID,\
+                quantity: "5",\
+                base_price_money: { amount: 100000, currency: "USD" }\
+              }],\
+              ticket_name: "Historical Data Sim: #{simulated_date}"\
+            },\
+            idempotency_key: SecureRandom.uuid\
+          }.to_json\
+\
+          order_res = http.request(order_req)\
+          order_body = JSON.parse(order_res.body)\
+\
+          if order_res.code == "200"\
+            order_id = order_body.dig("order", "id")\
+\
+            # --- STEP B: PAY FOR ORDER ---\
+            # Orders don't show up in "Sales" reports until they are paid.\
+            pay_uri = URI("https://connect.squareupsandbox.com/v2/payments")\
+            pay_req = Net::HTTP::Post.new(pay_uri)\
+            pay_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+            pay_req['Content-Type'] = 'application/json'\
+            \
+            pay_req.body = {\
+              source_id: "cnon:card-nonce-ok", # Sandbox-only success nonce\
+              idempotency_key: SecureRandom.uuid,\
+              amount_money: { amount: 500000, currency: "USD" },\
+              order_id: order_id\
+            }.to_json\
+\
+            pay_res = http.request(pay_req)\
+            \
+            mutex.synchronize do\
+              if pay_res.code == "200"\
+                results[:success] += 1\
+              else\
+                results[:error] += 1\
+              end\
+            end\
+          elsif order_res.code == "429"\
+            mutex.synchronize { results[:rate_limit] += 1 }\
+            sleep 1 # Back off if rate limited\
+          end\
+\
+        rescue => e\
+          mutex.synchronize { results[:error] += 1 }\
+        end\
+\
+        # Progress update every 100 successful orders\
+        mutex.synchronize do\
+          if (results[:success] + results[:error]) % 100 == 0\
+            puts "Progress: #{results[:success] + results[:error]}/#{TOTAL_ORDERS} completed..."\
+          end\
+        end\
+        \
+        sleep 0.05 # Tiny throttle to maintain stability\
+      end\
+    end\
+  end\
+end\
+\
+threads.each(&:join)\
+\
+# --- Summary ---\
+puts "\n--- GENERATION COMPLETE ---"\
+puts "Successes:   #{results[:success]}"\
+puts "Failures:    #{results[:error]}"\
+puts "Rate Limits: #{results[:rate_limit]}"\
+puts "Check your Square Sandbox Dashboard under 'Orders' to see the data."
+require 'net/http'\
+require 'uri'\
+require 'json'\
+\
+uri = URI.parse("https://connect.squareupsandbox.com/v2/orders/search")\
+request = Net::HTTP::Post.new(uri)\
+request['Authorization'] = 'Bearer EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+request['Content-Type'] = 'application/json'\
+request.body = { location_ids: ["L1YWX5JT4Y49G"], limit: 1 }.to_json\
+\
+response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) { |http| http.request(request) }\
+data = JSON.parse(response.body)\
+\
+# Square returns the total count in the search results\
+puts "Total Orders found via API: #{data['orders'].length}"
+uri = URI.parse("https://connect.squareupsandbox.com/v2/orders/search")\
+request = Net::HTTP::Post.new(uri)\
+request['Authorization'] = 'Bearer EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+request['Content-Type'] = 'application/json'\
+\
+# Removed "limit: 1" so we can see more\
+request.body = { \
+  location_ids: ["L1YWX5JT4Y49G"],\
+  query: { filter: { state: ["COMPLETED"] } } \
+}.to_json\
+\
+response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) { |http| http.request(request) }\
+data = JSON.parse(response.body)\
+\
+if data['orders']\
+  puts "Total Orders found via API: #{data['orders'].length}"\
+  puts "First Order ID: #{data['orders'].first['id']}"\
+  puts "Last Order ID: #{data['orders'].last['id']}"\
+else\
+  puts "No orders found. Response: #{data}"\
+end
+require 'net/http'\
+require 'uri'\
+require 'json'\
+require 'securerandom'\
+require 'date'\
+require 'thread'\
+\
+# --- Configuration ---\
+ACCESS_TOKEN = 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+TOTAL_ORDERS = 2000\
+THREAD_COUNT = 5\
+\
+LOCATIONS = [\
+  "LAVPE5E3X562W", "LCRJP0T15J3ES", "LDWJPEEY2A2W1", "LN1HZE1J1V4AB",\
+  "LP4P6RVTZWPK6", "LXJ12PSB1HH1B", "LSEQ96GHNHGT6", "L5G3EPT8X3ZQ2",\
+  "LXN0R0XB0AV12", "LPSRNWXZ6WEES", "L1YWX5JT4Y49G", "LKQVQJAEZ1FQX"\
+]\
+\
+# --- 1. Generate Order Tasks ---\
+start_date = Date.today << 24\
+queue = Queue.new\
+\
+(0...TOTAL_ORDERS).each do |i|\
+  queue << {\
+    # Distribute date: approx 0.36 days per order increment\
+    date: (start_date + (i * 0.365)).to_s,\
+    # Distribute location: Cycle through the array 0, 1, 2... 11\
+    location_id: LOCATIONS[i % LOCATIONS.size]\
+  }\
+end\
+\
+results = { success: 0, error: 0 }\
+mutex = Mutex.new\
+\
+puts "🚀 Starting distribution: 2,000 orders across 12 locations and 24 months..."\
+\
+# --- 2. Worker Threads ---\
+threads = Array.new(THREAD_COUNT) do |t_id|\
+  Thread.new do\
+    Net::HTTP.start("connect.squareupsandbox.com", 443, use_ssl: true) do |http|\
+      until queue.empty?\
+        task = queue.pop(true) rescue nil\
+        break unless task\
+\
+        begin\
+          # A. Create Order\
+          order_req = Net::HTTP::Post.new("/v2/orders")\
+          order_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+          order_req['Content-Type'] = 'application/json'\
+          order_req['Square-Version'] = '2026-01-22'\
+          \
+          order_req.body = {\
+            order: {\
+              location_id: task[:location_id],\
+              reference_id: "HISTORICAL-#{task[:date]}",\
+              line_items: [{\
+                name: "Distributed Poseidon Buffet",\
+                quantity: "1",\
+                base_price_money: { amount: 10000, currency: "USD" }\
+              }]\
+            },\
+            idempotency_key: SecureRandom.uuid\
+          }.to_json\
+\
+          order_res = http.request(order_req)\
+          \
+          if order_res.code == "200"\
+            order_id = JSON.parse(order_res.body).dig("order", "id")\
+\
+            # B. Create Payment\
+            pay_req = Net::HTTP::Post.new("/v2/payments")\
+            pay_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+            pay_req['Content-Type'] = 'application/json'\
+            pay_req.body = {\
+              source_id: "cnon:card-nonce-ok",\
+              idempotency_key: SecureRandom.uuid,\
+              amount_money: { amount: 10000, currency: "USD" },\
+              order_id: order_id,\
+              location_id: task[:location_id] # Payment must match order location\
+            }.to_json\
+            \
+            pay_res = http.request(pay_req)\
+\
+            mutex.synchronize do\
+              results[:success] += 1\
+              puts "Progress: #{results[:success]}/#{TOTAL_ORDERS} (Current Loc: #{task[:location_id]})" if results[:success] % 50 == 0\
+            end\
+          else\
+            mutex.synchronize { results[:error] += 1 }\
+          end\
+        rescue => e\
+          mutex.synchronize { results[:error] += 1 }\
+        end\
+        \
+        sleep 0.03 # Throttle to prevent Sandbox 429 errors\
+      end\
+    end\
+  end\
+end\
+\
+threads.each(&:join)\
+\
+puts "\n--- ✅ DISTRIBUTION COMPLETE ---"\
+puts "Total Locations Seeded: #{LOCATIONS.size}"\
+puts "Successful Sales:       #{results[:success]}"\
+puts "Failed Requests:        #{results[:error]}"
+ENV['SQUARE_CLIENT_ID']
+I18n.t('errors.integrations.sync_pos_sales.pos_location_mapping_not_found"')
+I18n.t("errors.integrations.sync_pos_sales.pos_location_mapping_not_found")
+Organisation.first
+Organisation.second
+Organisation.first
+Organisation.first.work_sites
+o = Organisation.second;
+require 'net/http'\
+require 'uri'\
+require 'json'\
+require 'securerandom'\
+require 'date'\
+require 'thread'\
+\
+# --- Configuration ---\
+ACCESS_TOKEN = 'EAAAlyV1hziKnDaz7gMV_uQMRsUgOIniyhiOSrVBa6a0F_OQt4pmSyIwhoWU-sKg'\
+TOTAL_ORDERS = 2000\
+THREAD_COUNT = 5\
+\
+LOCATIONS = [\
+  "LAVPE5E3X562W", "LCRJP0T15J3ES", "LDWJPEEY2A2W1", "LN1HZE1J1V4AB",\
+  "LP4P6RVTZWPK6", "LXJ12PSB1HH1B", "LSEQ96GHNHGT6", "L5G3EPT8X3ZQ2",\
+  "LXN0R0XB0AV12", "LPSRNWXZ6WEES", "L1YWX5JT4Y49G", "LKQVQJAEZ1FQX"\
+]\
+\
+# --- 1. Generate Order Tasks ---\
+start_date = Date.today << 24\
+queue = Queue.new\
+\
+(0...TOTAL_ORDERS).each do |i|\
+  queue << {\
+    # Distribute date: approx 0.36 days per order increment\
+    date: (start_date + (i * 0.365)).to_s,\
+    # Distribute location: Cycle through the array 0, 1, 2... 11\
+    location_id: LOCATIONS[i % LOCATIONS.size]\
+  }\
+end\
+\
+results = { success: 0, error: 0 }\
+mutex = Mutex.new\
+\
+puts "🚀 Starting distribution: 2,000 orders across 12 locations and 24 months..."\
+\
+# --- 2. Worker Threads ---\
+threads = Array.new(THREAD_COUNT) do |t_id|\
+  Thread.new do\
+    Net::HTTP.start("connect.squareupsandbox.com", 443, use_ssl: true) do |http|\
+      until queue.empty?\
+        task = queue.pop(true) rescue nil\
+        break unless task\
+\
+        begin\
+          # A. Create Order\
+          order_req = Net::HTTP::Post.new("/v2/orders")\
+          order_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+          order_req['Content-Type'] = 'application/json'\
+          order_req['Square-Version'] = '2026-01-22'\
+          \
+          order_req.body = {\
+            order: {\
+              location_id: task[:location_id],\
+              reference_id: "HISTORICAL-#{task[:date]}",\
+              line_items: [{\
+                name: "Distributed Poseidon Buffet",\
+                quantity: "1",\
+                base_price_money: { amount: 10000, currency: "USD" }\
+              }]\
+            },\
+            idempotency_key: SecureRandom.uuid\
+          }.to_json\
+\
+          order_res = http.request(order_req)\
+          \
+          if order_res.code == "200"\
+            order_id = JSON.parse(order_res.body).dig("order", "id")\
+\
+            # B. Create Payment\
+            pay_req = Net::HTTP::Post.new("/v2/payments")\
+            pay_req['Authorization'] = "Bearer #{ACCESS_TOKEN}"\
+            pay_req['Content-Type'] = 'application/json'\
+            pay_req.body = {\
+              source_id: "cnon:card-nonce-ok",\
+              idempotency_key: SecureRandom.uuid,\
+              amount_money: { amount: 10000, currency: "USD" },\
+              order_id: order_id,\
+              location_id: task[:location_id] # Payment must match order location\
+            }.to_json\
+            \
+            pay_res = http.request(pay_req)\
+\
+            mutex.synchronize do\
+              results[:success] += 1\
+              puts "Progress: #{results[:success]}/#{TOTAL_ORDERS} (Current Loc: #{task[:location_id]})" if results[:success] % 50 == 0\
+            end\
+          else\
+            mutex.synchronize { results[:error] += 1 }\
+          end\
+        rescue => e\
+          mutex.synchronize { results[:error] += 1 }\
+        end\
+        \
+        sleep 0.03 # Throttle to prevent Sandbox 429 errors\
+      end\
+    end\
+  end\
+end\
+\
+threads.each(&:join)\
+\
+puts "\n--- ✅ DISTRIBUTION COMPLETE ---"\
+puts "Total Locations Seeded: #{LOCATIONS.size}"\
+puts "Successful Sales:       #{results[:success]}"\
+puts "Failed Requests:        #{results[:error]}"
+Time.use_zone('America - Toronto') do \
+  Time.current\
+end
+ActiveSupport::TimeZone.all
+Time.use_zone('AU') do \
+  Time.current\
+end
+Time.use_zone('AU') do \
+  Time.current\
+end
+Time.use_zone('Australia/Sydney') do \
+  Time.current\
+end

@@ -1,3 +1,6 @@
 [submodule "sketchybar/sketchybar-app-font"]
 	path = sketchybar/sketchybar-app-font
 	url = git@github.com:kvndrsslr/sketchybar-app-font.git
+[submodule "dynamic-island-sketchybar"]
+	path = dynamic-island-sketchybar
+	url = git@github.com:crissNb/Dynamic-Island-Sketchybar.git

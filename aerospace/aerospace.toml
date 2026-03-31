@@ -12,10 +12,16 @@ after-login-command = []
 after-startup-command = ['exec-and-forget sketchybar']
 
 # Notify Sketchybar about workspace change
+# exec-on-workspace-change = [
+#   '/bin/bash',
+#   '-c',
+#   ' ~/.config/sketchybar/plugins/aerospace.sh $AEROSPACE_FOCUSED_WORKSPACE $AEROSPACE_PREV_WORKSPACE'
+# ]
+
 exec-on-workspace-change = [
   '/bin/bash',
   '-c',
-  ' ~/.config/sketchybar/plugins/aerospace.sh $AEROSPACE_FOCUSED_WORKSPACE $AEROSPACE_PREV_WORKSPACE'
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE',
 ]
 
 # Start AeroSpace at login
@@ -73,8 +79,8 @@ automatically-unhide-macos-hidden-apps = false
     inner.horizontal = 10
     inner.vertical =   10
     outer.left =       10
-    outer.bottom =     10 
-    outer.top =        40
+    outer.bottom =     10
+    outer.top = [{ monitor."Built-in Retina Display" = 10 }, 40]
     outer.right =      10
 
 # 'main' binding mode declaration
@@ -244,5 +250,12 @@ run = "move-node-to-workspace C"
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = "move-node-to-workspace C"
 
-# [[on-window-detected] 
-# run = 'exec-and-forget sketchybar --trigger aerospace_new_window'
+[[on-window-detected]]
+if.app-id = 'com.todesktop.230313mzl4w4u92'
+if.window-title-regex-substring = 'rostering-api-service'
+run = "move-node-to-workspace E"
+
+[[on-window-detected]]
+if.app-id = 'com.todesktop.230313mzl4w4u92'
+if.window-title-regex-substring = 'employment-hero'
+run = "move-node-to-workspace W"

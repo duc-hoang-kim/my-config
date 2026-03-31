@@ -56,7 +56,8 @@ keymap.set("n", "<leader>P", ":Octo search is:pr is:closed author:duchk226<CR>")
 
 keymap.set("n", "<leader>df", ":!rm %<CR>:bp<bar>sp<bar>bn<bar>bd<CR>")
 
-vim.keymap.del("n", "<Space><Space>")
+-- Safely delete keymap if it exists
+pcall(vim.keymap.del, "n", "<Space><Space>")
 
 local o = vim.o
 

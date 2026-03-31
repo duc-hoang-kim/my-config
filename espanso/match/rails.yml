@@ -1,0 +1,7 @@
+matches:
+  # Simple text replacement
+  - trigger: ":rspec"
+    replace: "bundle exec rspec {{clipb}}"
+    vars:
+      - name: "clipb"
+        type: "clipboard"
