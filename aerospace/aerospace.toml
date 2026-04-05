@@ -54,7 +54,7 @@ on-focused-monitor-changed = [
 ]
 
 on-focus-changed = [
-  'exec-and-forget ~/.config/sketchybar/plugins/aerospace-workspace-windows.sh'
+  'exec-and-forget ~/.config/sketchybar/plugins/space_windows.sh'
 ]
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
@@ -80,7 +80,7 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical =   10
     outer.left =       10
     outer.bottom =     10
-    outer.top = [{ monitor."Built-in Retina Display" = 10 }, 40]
+    outer.top = [{ monitor."Built-in Retina Display" = 10 }, 50]
     outer.right =      10
 
 # 'main' binding mode declaration
