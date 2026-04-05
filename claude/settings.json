@@ -1,0 +1,63 @@
+{
+  "env": {
+    "ENABLE_TOOL_SEARCH": "true"
+  },
+  "model": "sonnet[1m]",
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sketchybar --set claude_code icon.color=0xfffab387 label='Attention!' label.drawing=on"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rm -f /tmp/claude_sb_active; start=$(cat /tmp/claude_sb_start 2>/dev/null); elapsed=$(( $(date +%s) - ${start:-$(date +%s)} )); sketchybar --set claude_code icon.color=0xffa6e3a1 label=\"Done (${elapsed}s)\" label.drawing=on; (sleep 3 && sketchybar --set claude_code icon.color=0xffff5555 label='Waiting' label.drawing=on) &"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "touch /tmp/claude_sb_active; date +%s > /tmp/claude_sb_start; sketchybar --set claude_code icon.color=0xff89b4fa label='Thinking...' label.drawing=on"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "start=$(cat /tmp/claude_sb_start 2>/dev/null); elapsed=$(( $(date +%s) - ${start:-$(date +%s)} )); label=$(python3 -c \"import sys,json; d=json.load(sys.stdin); name=d.get('tool_name',''); i=d.get('tool_input',{}); arg=i.get('command') or i.get('file_path') or i.get('path') or i.get('pattern') or ''; print((name+'('+arg[:80]+')') if arg else name)\" 2>/dev/null); sketchybar --set claude_code icon.color=0xff89b4fa label=\"$label (${elapsed}s)\" label.drawing=on"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@latest",
+    "padding": 0
+  },
+  "enabledPlugins": {
+    "eh@eh-claude-code": true,
+    "github@claude-plugins-official": true,
+    "ruby-lsp@claude-plugins-official": true
+  },
+  "skipDangerousModePermissionPrompt": true
+}
